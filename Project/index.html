@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id ="BCW">
+    
+<h1 id="text">Project</h1>
+
+<button onclick="changeBackground()" >Click me to change background color</button>
+<script>
+    function changeBackground() {
+        var bg_color=document.getElementById('text').innerHTML;
+        console.log(bg_color)
+        if(bg_color=='red'){
+
+        document.getElementById('BCW').style.backgroundColor="aqua";
+        document.getElementById('text').innerHTML="aqua";
+        document.getElementById('text').style.color="white";
+    }else{
+        
+        document.getElementById('BCW').style.backgroundColor="red";
+        document.getElementById('text').innerHTML="red";
+        document.getElementById('text').style.color="white";
+        }
+
+}
+</script>
+</body>
+</html>
